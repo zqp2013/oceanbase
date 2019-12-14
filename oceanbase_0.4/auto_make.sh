@@ -1,4 +1,6 @@
 #!/bin/sh
+export DRC_ROOT=/usr/bin/
+
 libtoolize --force
 aclocal
 automake --force-missing --add-missing
