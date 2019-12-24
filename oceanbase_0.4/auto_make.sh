@@ -1,5 +1,6 @@
 #!/bin/sh
 export DRC_ROOT=/usr/bin/
+export TBLIB_ROOT=/home/qpzhou/sources/tb-common-utils/
 
 libtoolize --force
 aclocal
@@ -14,3 +15,4 @@ autoconf
 #autoconf
 #./build.sh
 #One also needs to run 'autoreconf -i' before rerunning ./configure - it will install the missing files that ./configure is complaining about.
+
