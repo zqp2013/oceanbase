@@ -1,6 +1,7 @@
 #!/bin/sh
 export DRC_ROOT=/usr/bin/
 export TBLIB_ROOT=/home/qpzhou/sources/tb-common-utils/
+export EASY_ROOT=/home/qpzhou/sources/libeasy/
 
 libtoolize --force
 aclocal
