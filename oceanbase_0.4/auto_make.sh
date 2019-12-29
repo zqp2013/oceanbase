@@ -24,3 +24,5 @@ autoconf
 #One also needs to run 'autoreconf -i' before rerunning ./configure - it will install the missing files that ./configure is complaining about.
 
 #apt-get install libaio-dev
+#lzo  实时压缩库
+#snappy  Google的压缩解压库
