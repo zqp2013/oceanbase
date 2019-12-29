@@ -23,3 +23,4 @@ autoconf
 #./build.sh
 #One also needs to run 'autoreconf -i' before rerunning ./configure - it will install the missing files that ./configure is complaining about.
 
+#apt-get install libaio-dev
