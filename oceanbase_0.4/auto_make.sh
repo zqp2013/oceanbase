@@ -1,7 +1,8 @@
 #!/bin/sh
 export DRC_ROOT=/usr/bin/
 
-export TBLIB_ROOT=/home/qpzhou/sources/tb-common-utils/
+export TBLIB_ROOT=/usr/local/
+#/home/qpzhou/sources/tb-common-utils/
 
 export EASY_ROOT=/usr/local/
 # tail depends libeasy :make install
