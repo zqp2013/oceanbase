@@ -1,7 +1,13 @@
 #!/bin/sh
 export DRC_ROOT=/usr/bin/
-export TBLIB_ROOT=/home/qpzhou/sources/tair/deps/tbsys-install/  #/home/qpzhou/sources/tb-common-utils/
-export EASY_ROOT=/usr/local/   # tail depends libeasy :make install
+
+export TBLIB_ROOT=/home/qpzhou/sources/tair/deps/tbsys-install/
+#/home/qpzhou/sources/tb-common-utils/
+
+export EASY_ROOT=/usr/local/
+# tail depends libeasy :make install
+
+
 
 libtoolize --force
 aclocal
