@@ -82,19 +82,19 @@
     if test "$withval" = "yes"; then
     AM_CXXFLAGS="-g -O2 -D_OB_VERSION=400 -D_NO_EXCEPTION -finline-functions \
 	-D__STDC_LIMIT_MACROS -D__STDC_CONSTANT_MACROS -DNDEBUG\
-	-Wall -Werror -Wextra -Wunused-parameter -Wformat -fno-strict-aliasing \
+	-Wall -Wno-error -Wextra -Wunused-parameter -Wformat -fno-strict-aliasing \
 	-Wconversion -Wno-deprecated -D__USE_LARGEFILE64 -D_FILE_OFFSET_BITS=64 \
 	-D_LARGE_FILE -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE" #-lprofiler
 	AM_CFLAGS="-g -O2 -D_OB_VERSION=400 -DCOMPATIBLE -D__USE_LARGEFILE64 -D_FILE_OFFSET_BITS=64\
 	-D_LARGE_FILE -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -DNDEBUG\
-	-finline-functions -fno-strict-aliasing -Werror -Wall"
+	-finline-functions -fno-strict-aliasing -Wno-error -Wall"
     fi
     ],
     [ AM_CXXFLAGS="-D__STDC_LIMIT_MACROS -D_OB_VERSION=400 -D__STDC_CONSTANT_MACROS -D_NO_EXCEPTION \
-	-Wall -Werror -Wextra -Wunused-parameter \
+	-Wall -Wno-error -Wextra -Wunused-parameter \
 	-Wformat -Wconversion -Wno-deprecated -fno-strict-aliasing -g" #-D__OB_MTRACE__ -rdynamic
 	AM_CFLAGS="-g -D_OB_VERSION=400 -DCOMPATIBLE -D__USE_LARGEFILE64 -D_FILE_OFFSET_BITS=64\
-	-D_LARGE_FILE -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Werror -Wall"
+	-D_LARGE_FILE -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Wno-error -Wall"
 	]
     )
 
