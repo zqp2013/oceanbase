@@ -25,4 +25,4 @@ autoconf
 
 #apt-get install libaio-dev
 #lzo  实时压缩库
-#snappy  Google的压缩解压库
+#snappy  Google的压缩解压库     make     ar rcs libsnappy.a ./*.o
