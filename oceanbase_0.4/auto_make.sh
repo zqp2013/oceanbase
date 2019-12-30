@@ -26,3 +26,7 @@ autoconf
 #apt-get install libaio-dev
 #lzo  实时压缩库
 #snappy  Google的压缩解压库   -fPIC
+
+
+#: undefined reference to symbol 'x509_free@@openssl_1_1_0'
+# -lcrypto
