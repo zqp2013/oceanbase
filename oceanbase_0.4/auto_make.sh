@@ -1,7 +1,8 @@
 #!/bin/sh
 export DRC_ROOT=/usr/bin/
 
-export TBLIB_ROOT=/home/qpzhou/sources/tb-common-utils/
+export TBLIB_ROOT=/usr/local/
+#/home/qpzhou/sources/tb-common-utils/
 
 export EASY_ROOT=/usr/local/
 # tail depends libeasy :make install
@@ -22,3 +23,6 @@ autoconf
 #./build.sh
 #One also needs to run 'autoreconf -i' before rerunning ./configure - it will install the missing files that ./configure is complaining about.
 
+#apt-get install libaio-dev
+#lzo  实时压缩库
+#snappy  Google的压缩解压库   -fPIC
