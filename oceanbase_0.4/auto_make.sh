@@ -30,3 +30,8 @@ autoconf
 
 #: undefined reference to symbol 'x509_free@@openssl_1_1_0'
 # -lcrypto
+
+
+#libobsql.so晚用到mysqlclient库
+#apt-cache search libmysqlclient-dev
+#apt-get install default-libmysqlclient-dev
