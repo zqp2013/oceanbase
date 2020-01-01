@@ -7,6 +7,7 @@ export TBLIB_ROOT=/usr/local/
 export EASY_ROOT=/usr/local/
 # tail depends libeasy :make install
 
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 
 
 libtoolize --force
