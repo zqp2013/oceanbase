@@ -1,2 +1,8 @@
 # Ignore subversion meta directories
 .svn/
+*.o
+*.la
+*.lo
+Makefile
+Makefile.in
+
