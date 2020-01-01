@@ -38,6 +38,11 @@ autoconf
 #apt-get install default-libmysqlclient-dev
 
 
+
 #/usr/bin/ld: cannot find -lnuma
 #/usr/bin/ld: cannot find -lreadline
 #/usr/bin/ld: cannot find -lncurses
+
+
+#jni.h: No such file or directory
+#apt-get install openjdk-8-jdk
