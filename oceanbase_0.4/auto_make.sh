@@ -33,7 +33,7 @@ autoconf
 
 #gtest
 
-#libobsql.so晚用到mysqlclient库
+#libobsql.so要用到mysqlclient库
 #apt-cache search libmysqlclient-dev
 #apt-get install default-libmysqlclient-dev
 
