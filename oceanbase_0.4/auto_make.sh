@@ -1,12 +1,13 @@
 #!/bin/sh
-export DRC_ROOT=/usr/bin/
+export DRC_ROOT=/usr/bin
 
-export TBLIB_ROOT=/usr/local/
-#/home/qpzhou/sources/tb-common-utils/
+export TBLIB_ROOT=/usr/local
+#/home/qpzhou/sources/tb-common-utils
 
-export EASY_ROOT=/usr/local/
+export EASY_ROOT=/usr/local
 # tail depends libeasy :make install
 
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 
 
 libtoolize --force
@@ -26,3 +27,23 @@ autoconf
 #apt-get install libaio-dev
 #lzo  实时压缩库
 #snappy  Google的压缩解压库   -fPIC
+
+
+#: undefined reference to symbol 'x509_free@@openssl_1_1_0'
+# -lcrypto
+
+#gtest
+
+#libobsql.so要用到mysqlclient库
+#apt-cache search libmysqlclient-dev
+#apt-get install default-libmysqlclient-dev
+
+
+
+#/usr/bin/ld: cannot find -lnuma
+#/usr/bin/ld: cannot find -lreadline
+#/usr/bin/ld: cannot find -lncurses
+
+
+#jni.h: No such file or directory
+#apt-get install openjdk-8-jdk
