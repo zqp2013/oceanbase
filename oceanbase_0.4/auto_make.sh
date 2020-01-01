@@ -35,3 +35,8 @@ autoconf
 #libobsql.so晚用到mysqlclient库
 #apt-cache search libmysqlclient-dev
 #apt-get install default-libmysqlclient-dev
+
+
+#/usr/bin/ld: cannot find -lnuma
+#/usr/bin/ld: cannot find -lreadline
+#/usr/bin/ld: cannot find -lncurses
