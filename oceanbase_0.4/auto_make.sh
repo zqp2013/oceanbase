@@ -1,10 +1,10 @@
 #!/bin/sh
-export DRC_ROOT=/usr/bin/
+export DRC_ROOT=/usr/bin
 
-export TBLIB_ROOT=/usr/local/
-#/home/qpzhou/sources/tb-common-utils/
+export TBLIB_ROOT=/usr/local
+#/home/qpzhou/sources/tb-common-utils
 
-export EASY_ROOT=/usr/local/
+export EASY_ROOT=/usr/local
 # tail depends libeasy :make install
 
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
