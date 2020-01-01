@@ -61,7 +61,7 @@ int ObSQLSessionMgr::kill_session(uint32_t session_id, bool is_query)
         if (NULL != c)
         {
           TBSYS_LOG(INFO, "kill connection %s", easy_connection_str(c));
-          easy_connection_destroy_dispatch(c);
+          //todo:qpzhou easy_connection_destroy_dispatch(c);
           //c->event_status = EASY_EVENT_DESTROY;
           //easy_connection_wakeup(c);
           info->set_conn(NULL); // the connection is invalid now
@@ -401,7 +401,7 @@ void ObSQLSessionMgr::check_session_timeout()
       else
       {
         TBSYS_LOG(INFO, "session %u timeout kill connection %s", entry.first, easy_connection_str(c));
-        easy_connection_destroy_dispatch(c);
+        //todo:qpzhou easy_connection_destroy_dispatch(c);
         //c->event_status = EASY_EVENT_DESTROY;
         //easy_connection_wakeup(c);
         session->set_conn(NULL); // the connection is invalid now

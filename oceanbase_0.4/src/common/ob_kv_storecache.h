@@ -190,6 +190,7 @@ namespace oceanbase
 
       class StoreHandle
       {
+        public:
         enum
         {
           FREE = 0,

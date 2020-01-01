@@ -43,8 +43,8 @@ int ObTabletLocationList::sort(const ObServer & server)
     {
       for (int64_t j = 0; j < i; ++j)
       {
-        if (abs(locations_[j].server_.chunkserver_.get_ipv4() - server_ip) > 
-          abs(locations_[j+1].server_.chunkserver_.get_ipv4() - server_ip))
+        if (abs((int)(locations_[j].server_.chunkserver_.get_ipv4() - server_ip)) > 
+          abs((int)(locations_[j+1].server_.chunkserver_.get_ipv4() - server_ip)))
         {
           temp = locations_[j];
           locations_[j] = locations_[j+1];

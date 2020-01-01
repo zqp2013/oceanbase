@@ -161,7 +161,7 @@ TEST(ObObj,int_boundary)
 {
   int64_t need_len = 0;
 
-  int64_t data[] = {1,28,-1,INT32_MIN,static_cast<int64_t>(UINT32_MAX),INT64_MAX,INT64_MIN,UINT64_MAX,124543900};
+  int64_t data[] = {1,28,-1,INT32_MIN,static_cast<int64_t>(UINT32_MAX),INT64_MAX,INT64_MIN,static_cast<int64_t>(UINT64_MAX),124543900};
   for(uint32_t i=0;i<sizeof(data)/sizeof(data[0]);++i)
   {
     need_len += serialization::encoded_length_int(data[i]);

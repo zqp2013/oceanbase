@@ -31,8 +31,8 @@
 #include <stdint.h>
 #include <vector>
 #include "ob_define.h"
-#include "MD.h"
-#include "BR.h"
+//#include "MD.h"
+//#include "BR.h"
 
 namespace oceanbase
 {

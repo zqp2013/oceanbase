@@ -57,7 +57,7 @@ namespace oceanbase
       eio_->checkdrc = 1;
       eio_->support_ipv6 = 0;
       eio_->no_redispatch = 1;
-      eio_->no_delayack = 1;
+     //todo:qpzhou  eio_->no_delayack = 1;
       easy_eio_set_uthread_start(eio_, easy_on_ioth_start, this);
       eio_->uthread_enable = 0;
       if (NULL == eio_)

@@ -36,7 +36,7 @@ void ob_easy_log_format(int level, const char *file, int line, const char *funct
 
   // 从loop中取
   if (easy_baseth_self && easy_baseth_self->loop) {
-    now = ez_now(easy_baseth_self->loop);
+    now = ev_now(easy_baseth_self->loop);
   } else {
     now = static_cast<ev_tstamp>(time(NULL));
   }

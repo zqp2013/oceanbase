@@ -10,7 +10,7 @@
 #ifndef _META_DATA_H_
 #define _META_DATA_H_
 
-#include "MD.h"
+//#include "MD.h"
 
 namespace oceanbase
 {

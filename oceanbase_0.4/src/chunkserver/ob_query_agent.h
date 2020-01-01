@@ -169,7 +169,7 @@ namespace oceanbase
 
     private:
       static const int64_t MAX_STAGE_OPERATION_COUNT = 16;
-      static const double MAX_SIZE_RATIO_AFTER_TOPK = 0.25;
+      constexpr static const double MAX_SIZE_RATIO_AFTER_TOPK = 0.25;
 
       //query param
       bool inited_;

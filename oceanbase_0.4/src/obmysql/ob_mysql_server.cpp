@@ -3004,7 +3004,7 @@ namespace oceanbase
         easy_client_wait_init(&wait_obj);
         req->client_wait = &wait_obj;
         req->retcode = EASY_AGAIN;
-        req->waiting = 1;
+        //todo:qpzhou  req->waiting = 1;
         //io线程被唤醒，r->opacket被挂过去,send_response->easy_connection_request_done
         easy_request_wakeup(req);
         // IO线程回调 int ObMySQLCallback::process(easy_request_t* r)的时候唤醒工作线程

@@ -55,7 +55,7 @@ namespace oceanbase
         static const mode_t TRASH_DIR_MODE = S_IRWXU | S_IRWXG | S_IRWXO;
       private:
         static const int64_t DEVICE_SET_SIZE = 10;
-        static const double DEFAULT_DISK_RESERVED_RATIO = 0.1;
+        constexpr static const double DEFAULT_DISK_RESERVED_RATIO = 0.1;
         static const int64_t DEFAULT_DISK_RESERVED_SPACE = 10L * 1024L * 1024L * 1024L;
         static const int64_t DEFAULT_DISK_ENFILE_INTERVAL_TIME = 10 * 60 * 1000 * 1000;
         struct StoreNode;

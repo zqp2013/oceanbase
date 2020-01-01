@@ -172,7 +172,7 @@ const char* get_absolute_path(const char* path)
 
 int64_t get_cur_sign(const int64_t sign)
 {
-  int64_t local_ip = abs(tbsys::CNetUtil::getLocalAddr(NULL));
+  int64_t local_ip = abs((int)tbsys::CNetUtil::getLocalAddr(NULL));
   int64_t ret = local_ip | sign;
   fprintf(stderr, "local_ip=%ld cur_sign=%ld calc_sign=%ld\n", local_ip, sign, ret);
   return ret;

@@ -209,11 +209,11 @@ namespace oceanbase
       {
         if ((length - 1) > i)
         {
-          databuff_printf(buffer, BUFFER_SIZE, pos, "%s%s", to_cstring(array[i]), deli);
+          //todo:qpzhou databuff_printf(buffer, BUFFER_SIZE, pos, "%s%s", to_cstring(array[i]), deli);
         }
         else
         {
-          databuff_printf(buffer, BUFFER_SIZE, pos, "%s", to_cstring(array[i]));
+          //todo:qpzhou databuff_printf(buffer, BUFFER_SIZE, pos, "%s", to_cstring(array[i]));
         }
       }
       return buffer;
