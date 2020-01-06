@@ -1,10 +1,10 @@
 #!/bin/bash
 
-DIR=${pwd}
+DIR=$(pwd)
 BIN_DIR=/usr/local/bin
 ETC_DIR=${DIR}
 LIB_DIR=/usr/local/lib
-
+#echo ${ETC_DIR}
 
 CS_CMD=chunkserver
 CS_CONF=chunkserver.conf
@@ -30,13 +30,14 @@ set_env()
 #$2 conf
 start_service()
 {
-	$0 -f $1
+	echo $1 "-f" $2
+	$1 -f $2
 }
 
 #$1 cmd
 stop_service()
 {
-	killall $0
+	killall $1
 }
 
 
@@ -45,7 +46,7 @@ stop_service()
 set_env
 cd $DIR
 
-case $0 in
+case $1 in
 	start_cs)
 		start_service $BIN_DIR/$CS_CMD ${ETC_DIR}/$CS_CONF
 		;;
@@ -74,7 +75,14 @@ case $0 in
 		rm  log  -rf
 		;;
 	*)
-		echo "---Usage: start_cs|stop_cs|start_ms|stop_ms|start_rs|stop_rs|start_ups|stop_ups|clean)"
+		echo "-------------------------------------------------------------------"
+		echo "Usage: "
+		echo "  start_cs | stop_cs   chunkserver 静态数据存储节点"
+		echo "  start_ms | stop_ms   mergeserver 查询服务节点"
+		echo "  start_rs | stop_rs   rootserver  集群中心控制节点"
+		echo "  start_ups|stop_ups   updateserver 更新服务节点"
+		echo "  clean"
+		echo "-------------------------------------------------------------------"
 		;;
 esac
 
