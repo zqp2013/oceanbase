@@ -2,7 +2,7 @@
 
 DIR=$(pwd)
 BIN_DIR=/usr/local/bin
-ETC_DIR=${DIR}
+ETC_DIR=${DIR}/etc
 LIB_DIR=/usr/local/lib
 #echo ${ETC_DIR}
 
@@ -30,8 +30,8 @@ set_env()
 #$2 conf
 start_service()
 {
-	echo $1 "-f" $2
-	$1 -f $2
+	echo $1 "-c" $2
+	$1 -c $2
 }
 
 #$1 cmd
