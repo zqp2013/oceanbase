@@ -287,10 +287,10 @@ MYSQL * STDCALL mysql_init(MYSQL *mysql)
   return mysql;
 }
 
-my_bool STDCALL mysql_ssl_set(MYSQL *mysql, const char *key, const char *cert, const char *ca, const char *capath, const char *cipher)
-{
-  CALLREALWITHJUDGE(mysql, mysql_ssl_set, key, cert, ca, capath, cipher);
-}
+// my_bool STDCALL mysql_ssl_set(MYSQL *mysql, const char *key, const char *cert, const char *ca, const char *capath, const char *cipher)
+// {
+//   CALLREALWITHJUDGE(mysql, mysql_ssl_set, key, cert, ca, capath, cipher);
+// }
 
 my_bool STDCALL mysql_change_user(MYSQL *mysql, const char *user, const char *passwd, const char *db)
 {
@@ -618,15 +618,15 @@ int STDCALL mysql_ping(MYSQL *mysql)
   CALLREALWITHJUDGE(mysql, mysql_ping);
 }
 
-const char * STDCALL mysql_stat(MYSQL *mysql)
-{
-  CALLREALWITHJUDGE(mysql, mysql_stat);
-}
+// const char * STDCALL mysql_stat(MYSQL *mysql)
+// {
+//   CALLREALWITHJUDGE(mysql, mysql_stat);
+// }
 
-const char * STDCALL mysql_get_server_info(MYSQL *mysql)
-{
-  CALLREALWITHJUDGE(mysql, mysql_get_server_info);
-}
+// const char * STDCALL mysql_get_server_info(MYSQL *mysql)
+// {
+//   CALLREALWITHJUDGE(mysql, mysql_get_server_info);
+// }
 
 const char * STDCALL mysql_get_client_info(void)
 {
@@ -638,10 +638,10 @@ unsigned long STDCALL mysql_get_client_version(void)
   return OB_CLIENT_VERSION;
 }
 
-const char * STDCALL mysql_get_host_info(MYSQL *mysql)
-{
-  CALLREALWITHJUDGE(mysql, mysql_get_host_info);
-}
+// const char * STDCALL mysql_get_host_info(MYSQL *mysql)
+// {
+//   CALLREALWITHJUDGE(mysql, mysql_get_host_info);
+// }
 
 unsigned long STDCALL mysql_get_server_version(MYSQL *mysql)
 {

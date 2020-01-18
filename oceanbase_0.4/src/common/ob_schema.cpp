@@ -2894,7 +2894,7 @@ namespace oceanbase
     {
       const ObColumnSchemaV2 *column = NULL;
 
-      if (NULL != table_name && '\0' != *table_name && NULL != column_name && '\0' != column_name)
+      if (NULL != table_name && '\0' != *table_name && NULL != column_name && '\0' != *column_name)
       {
         ObColumnNameKey k;
         k.table_name_.assign_ptr(const_cast<char *>(table_name),static_cast<int32_t>(strlen(table_name)));
@@ -3234,7 +3234,7 @@ namespace oceanbase
     {
       int ret = OB_SUCCESS;
 
-      if (NULL == table_name || NULL == column_name || '\0' == *table_name || '\0' == column_name || size <= 0)
+      if (NULL == table_name || NULL == column_name || '\0' == *table_name || '\0' == *column_name || size <= 0)
       {
         TBSYS_LOG(ERROR,"invalid argument");
         ret = OB_ERROR;
@@ -3347,7 +3347,7 @@ namespace oceanbase
     {
       int ret = OB_SUCCESS;
 
-      if (NULL == table_name || NULL == column_name || '\0' == *table_name || '\0' == column_name || size <= 0)
+      if (NULL == table_name || NULL == column_name || '\0' == *table_name || '\0' == *column_name || size <= 0)
       {
         TBSYS_LOG(ERROR,"invalid argument");
         ret = OB_ERROR;

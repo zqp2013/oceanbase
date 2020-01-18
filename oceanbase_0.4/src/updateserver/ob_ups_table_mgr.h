@@ -77,7 +77,7 @@ namespace oceanbase
         int32_t reserve1;
         int64_t reserve2;
         int64_t reserve3;
-        char buf[];
+        char buf[0];
       };
       struct FreezeParamV1
       {
@@ -157,7 +157,7 @@ namespace oceanbase
         int32_t reserve1;
         int64_t reserve2;
         int64_t reserve3;
-        char buf[];
+        char buf[0];
       };
       struct DropParamV1
       {
