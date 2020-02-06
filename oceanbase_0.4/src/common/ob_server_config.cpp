@@ -240,6 +240,8 @@ DEFINE_DESERIALIZE(ObServerConfig)
   }
   else
   {
+  uint64_t length = data_len;
+    /* todo:qpzhou 这里的配置文件需要验证hash及长度（分别头部1字节、2字节），暂时注掉
     uint32_t hash_r = *reinterpret_cast<const uint32_t*>(buf + pos);
     pos += sizeof (uint32_t);
     uint64_t length = *reinterpret_cast<const uint64_t*>(buf + pos);
@@ -257,7 +259,7 @@ DEFINE_DESERIALIZE(ObServerConfig)
       TBSYS_LOG(ERROR, "Config file broken, deserialize server config error!");
       ret = OB_DESERIALIZE_ERROR;
     }
-    else if (OB_SUCCESS != (ret = add_extra_config(buf + pos)))
+    else */if (OB_SUCCESS != (ret = add_extra_config(buf + pos)))
     {
       TBSYS_LOG(ERROR, "Read server config failed!");
     }
